@@ -398,8 +398,34 @@ p {
 }
 
 .publication-meta {
-  margin-top: 6px;
-  color: var(--muted);
+ margin-top: 6px;
+ color: var(--muted);
+}
+
+.publication-links {
+ margin-top: 10px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+}
+
+.publication-links a {
+ display: inline-flex;
+ align-items: center;
+ min-height: 28px;
+ padding: 0 10px;
+ border: 1px solid var(--border);
+ border-radius: 999px;
+ background: var(--accent-soft);
+ color: var(--accent);
+ font-size: 0.86rem;
+ font-weight: 600;
+ text-decoration: none;
+}
+
+.publication-links a:hover {
+ text-decoration: none;
+ background: #e4eef8;
 }
 
 .note {
