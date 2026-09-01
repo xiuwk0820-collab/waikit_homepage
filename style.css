@@ -371,6 +371,7 @@ p {
 }
 
 .publication-figure {
+  position: relative;
   margin: 0;
   aspect-ratio: 1 / 1;
   overflow: hidden;
@@ -381,8 +382,23 @@ p {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
+}
+
+.pub-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #35557a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
 }
 
 .publication-cover-plain {
